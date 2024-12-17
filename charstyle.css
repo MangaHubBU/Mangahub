@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+#header {
+    position: static;
+    top: 0;
+    width: 100%;
+    background-image: url(animeStar.jpg);
+    opacity: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.811);
+    z-index: 20;
+    animation: moveBackground 25s linear infinite;
+    }
+    
+    @keyframes moveBackground {
+        from {
+            background-position: right center;
+    }
+        to {  
+            background-position: left center;
+        }
+    
+    }
+    
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    }
+    
+    
+.logo-name {
+    display: flex;
+    align-items: center;
+    }
+    
+    
+.logo img {
+    height: 60px;
+    margin-top: 7px;
+    width: auto;
+    }
+    
+    
+#header h1 {
+    font-size: 2.5rem;
+    }
+
+.header_title-style{
+    background-color: #fb9900;
+    opacity: 100%;
+    width: 80px;
+    margin-left: 5px;
+    border-radius: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+    }
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+    }
+        
+        
+#header nav ul li {
+    margin: 0 15px;
+    }
+        
+        
+#header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    }
+
+.background {
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    width: 100%;
+    height: 400vh;
+    background: url('try_bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    opacity: 0.30;
+    z-index: -1;
+    flex-direction: column; /* Aligns items in a column (vertical stack) */
+    justify-content: center; /* Centers content vertically */
+    align-items: center;
+    }
+.mangaa{
+    display:contents;
+    gap: 20px; /* Space between the image and the text */
+    max-width: 800px;
+    margin: 20px auto;
+}
+.mangaimage{
+    position: absolute;
+    left: 125px;
+    top: 200px;
+
+}
+.mangaimage img{
+    max-width: 350px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  
+.manga-container {
+    position: absolute;
+    top: 205px;
+    margin-left: 550px;
+    height: 500px;
+    padding: 10px;
+    background-color: #19191900;
+    width: 900px;
+  }
+  
+  .manga-title {
+    background: linear-gradient(90deg, #000, Transparent);
+    color: white;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin: -10px;
+    margin-bottom: 28px;
+    display: flex;
+    width: 950px;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+  }
+  
+  .manga-line {
+    height: 2px;
+    width: 870px;
+    background-color: #000000;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #000000;
+  }
+
+
+body {
+    color: #f1eded;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+     
+  /* Tab Container */
+  .tab-charandhighlights-container {
+    position: absolute;
+    top: 800px;
+    left: 150px;
+    display: flex; /* Ensures tabs are aligned horizontally */
+    flex-direction: row; /* Tabs are in a row */
+    background-color: #222; /* Background color for the container */
+    width: 80%; /* Ensure the container spans full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Tab Styling */
+  .tab {
+    flex: 1; /* All tabs take equal space */
+    padding: 15px; /* Padding for comfortable spacing */
+    text-align: center; /* Center-align text */
+    color: white; /* Text color */
+    background-color: #333; /* Default tab background */
+    border-right: 2px solid #ffffff; /* Optional separator between tabs */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    box-sizing: border-box; /* Include padding and border in size calculation */
+  }
+  
+  /* Remove Right Border on Last Tab */
+  .tab:last-child {
+    border-right: none;
+  }
+  
+  /* Active Tab Styling */
+  .tab.active {
+    background-color: #fb9900; /* Highlighted background for active tab */
+  }
+  
+  /* Tab Hover Effect */
+  .tab:hover {
+    background-color: #fb9900; /* Darker shade on hover */
+    color: #333;
+  }
+  
+  .content-tab {
+    position: absolute;
+    justify-content: flex-start;
+    gap: 20px;
+    top: 850px;
+    display: none; /* Hide all content initially */
+    padding: 20px;
+    background-color: #3333334d;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    top: 837px;
+  }
+  
+  .content-tab.active {
+    flex-direction: column;
+    display: flex; /* Show active content */
+  }
+    
+  .content-item {
+    color: #ff9900;
+    -webkit-text-stroke: .1px rgba(0, 0, 0, 0.444);
+    display: flex; /* Align image and text horizontally */
+    margin-right: 190px;
+    gap: 50px; /* Space between image and text */
+    align-items: flex-start; /* Align items to the top */
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+  .character-container img {
+    border: 2px solid #000000; /* Add a border to the image */
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5); /* Add a shadow below the image */
+    width: 200px; /* Adjust the width of the image */
+    margin-left: 190px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+/* Text container */
+.description-container {
+    max-width: 600px; /* Limit text container width */
+}
+
+/* Add this to the parent container of .manga elements */
+.manga-tab-container {
+    display: flex;
+    flex-direction: row; /* Ensure items are aligned in a row */
+    gap: 80px; /* Add spacing between the images */
+    padding-top: 60px;
+    padding-right: 100px;
+    padding-left: 120px;
+    padding-bottom: 60px;
+    flex-wrap: wrap; /* Allow wrapping if there's not enough space */
+}
+
+/* Keep the existing .manga styles */
+.manga {
+    width: 250px;
+    position: relative;
+    height: 350px;
+    border-radius: 10px;
+    flex-shrink: 0; /* Ensure images do not shrink */
+}
+
+.manga img {
+    border: 5px solid #000000; /* Add a border to the image */
+    border-radius: 25px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5); /* Add a shadow below the image */
+    width: 100%;
+    max-width: 250px;
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+
+
+#main-content {
+    text-align: center;
+    padding: 80px 20px;
+    }
+    
+    
+#main-content h2 {
+    font-size: 3rem;
+    }
+    
+    
+#main-content p {
+    font-size: 1.2rem;
+    }
