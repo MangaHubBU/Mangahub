@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+#header {
+    position: static;
+    top: 0;
+    width: 100%;
+    background-image: url(animeStar.jpg);
+    opacity: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.811);
+    z-index: 20;
+    animation: moveBackground 25s linear infinite;
+    }
+    
+    @keyframes moveBackground {
+        from {
+            background-position: right center;
+    }
+        to {  
+            background-position: left center;
+        }
+    
+    }
+    
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    }
+    
+    
+.logo-name {
+    display: flex;
+    align-items: center;
+    }
+    
+    
+.logo img {
+    height: 60px;
+    margin-top: 7px;
+    width: auto;
+    }
+    
+    
+#header h1 {
+    font-size: 2.5rem;
+    }
+
+.header_title-style{
+    background-color: #fb9900;
+    opacity: 100%;
+    width: 80px;
+    margin-left: 5px;
+    border-radius: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+    }
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+    }
+        
+        
+#header nav ul li {
+    margin: 0 15px;
+    }
+        
+        
+#header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    }
+
+.background {
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    background: url('try_bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    opacity: 0.30;
+    z-index: -1;
+    flex-direction: column; /* Aligns items in a column (vertical stack) */
+    justify-content: center; /* Centers content vertically */
+    align-items: center;
+    }
+.mangaa{
+    display:contents;
+    gap: 20px; /* Space between the image and the text */
+    max-width: 800px;
+    margin: 20px auto;
+}
+.mangaimage{
+    position: absolute;
+    left: 125px;
+    top: 200px;
+
+}
+.mangaimage img{
+    max-width: 350px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  
+.manga-container {
+    position: absolute;
+    top: 205px;
+    margin-left: 550px;
+    height: 500px;
+    padding: 10px;
+    background-color: #19191900;
+    width: 900px;
+  }
+  
+  .manga-title {
+    background: linear-gradient(90deg, #000, Transparent);
+    color: white;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+    font-size: 2.3em;
+    font-weight: bold;
+    margin: -10px;
+    margin-bottom: 28px;
+    display: flex;
+    width: 950px;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+  }
+  
+  .manga-line {
+    height: 2px;
+    width: 870px;
+    background-color: #000000;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #000000;
+  }
+
+
+body {
+    color: #f1eded;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 1vh;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+     
+    
+#main-content {
+    text-align: center;
+    padding: 80px 20px;
+    }
+    
+    
+#main-content h2 {
+    font-size: 3rem;
+    }
+    
+    
+#main-content p {
+    font-size: 1.2rem;
+    }
